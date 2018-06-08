@@ -1,6 +1,6 @@
 {
-  "name": "generator-politico-interactives",
-  "description": "Yeoman generator for interactive projects at POLITICO.",
+  "name": "maroon-projects-generator",
+  "description": "Yeoman generator for The Chicago Maroon's projects.",
   "version": "0.8.0",
   "main": "generators/app/index.js",
   "scripts": {
@@ -13,14 +13,14 @@
     "yeoman-generator"
   ],
   "author": {
-    "name": "Jon McClure",
-    "email": "jmcclure@politico.com",
-    "url": "https://github.com/The-Politico"
+    "name": "Euirim Choi",
+    "email": "euirim@chicagomaroon.com",
+    "url": "https://github.com/chicagomaroon"
   },
   "license": "ISC",
   "repository": {
     "type": "git",
-    "url": "https://github.com/The-Politico/generator-politico-interactives.git"
+    "url": "https://github.com/chicagomaroon/maroon-projects-generator.git"
   },
   "dependencies": {
     "chalk": "^1.1.3",
