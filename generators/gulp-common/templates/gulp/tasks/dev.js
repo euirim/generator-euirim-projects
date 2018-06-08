@@ -10,7 +10,7 @@ const startTunnel = (servePort) => {
   ngrok.connect({
     authtoken: process.env.ngrokToken,
     auth: 'interactive:news',
-    subdomain: 'politico',
+    subdomain: 'chicagomaroon',
     addr: servePort,
   }, (err, url) => { open(url); });
 };

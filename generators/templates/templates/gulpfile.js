@@ -23,7 +23,7 @@ const gulp = require('./gulp')([
 /* Add secure keys to environment */
 envFile(path.join(__dirname, '.env'), { overwrite: true }); // Adds PASSPHRASE to env
 const secure = new SecureKeys({ secret: process.env.PASSPHRASE });
-const keysPath = path.join(os.homedir(), '.politico/interactives.json');
+const keysPath = path.join(os.homedir(), '.maroon/interactives.json');
 const keysObj = fs.readJsonSync(keysPath);
 try {
   env.set(secure.decrypt(keysObj));
