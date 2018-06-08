@@ -36,7 +36,7 @@ module.exports = class extends Generator {
 
   validateKeys() {
     this.secure = new SecureKeys({ secret: this.options.passphrase });
-    this.keyPath = path.join(os.homedir(), '.politico/interactives.json');
+    this.keyPath = path.join(os.homedir(), '.maroon/interactives.json');
 
     try {
       const keysObj = fs.readJsonSync(this.keyPath);

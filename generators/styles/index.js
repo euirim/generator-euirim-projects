@@ -8,7 +8,7 @@ module.exports = class extends Generator {
   }
   install() {
     const dependencies = [
-      'politico-style'
+      'bootstrap-sass'
     ];
     this.yarnInstall(dependencies, { save: true });
   }
