@@ -1,7 +1,7 @@
 {
-  "name": "politico-interactive-<%=slug%>",
+  "name": "maroon-project-<%=slug%>",
   "version": "1.0.0",
-  "description": "A Politico interactive",
+  "description": "A Maroon project.",
   "main": "index.js",
   "scripts": {
     "test": "echo \"No tests\" && exit 1"
