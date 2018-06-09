@@ -19,7 +19,7 @@ module.exports = class extends Generator {
     const timestamp = new Date();
     const publishPath = `interactives/${timestamp.getFullYear()}/${this.slug}/`;
     const prodUrl = `https://projects.chicagomaroon.com/${publishPath}`;
-    const stagingUrl = `https://s3.amazonaws.com/staging.interactives.politico.com/${publishPath}index.html`;
+    const stagingUrl = `https://s3.amazonaws.com/projects.politico.com/${publishPath}index.html`;
 
     this.fs.copy(
       this.templatePath('gitignore'),
@@ -57,20 +57,20 @@ module.exports = class extends Generator {
       dateline: '04/10/18 08:13 PM EDT',
       "header": {
         "headline": "This is your headline in the metadata file",
-        "subhed": "Subhed lives in the metadata.",
-        "byline": "Polly Politico in metadata",
+        "subhed": "Subhead entices the reader.",
+        "byline": "Carl Maroon",
         "byline_link": "https://www.chicagomaroon.com/"
       },
       share: {
         fbook: {
           card_title: this.title,
-          card_description: 'The latest news from POLITICO.',
+          card_description: 'The independent student newspaper of The University of Chicago since 1892.',
           author: 'chicagomaroon',
         },
         twitter: {
           card_title: this.title,
-          share_tweet: 'The latest news from POLITICO.',
-          card_description: 'The latest news from POLITICO.',
+          share_tweet: 'The independent student newspaper of The University of Chicago since 1892.',
+          card_description: 'The independent student newspaper of The University of Chicago since 1892.',
           author: '@chicagomaroon',
         },
         image: {
@@ -80,16 +80,8 @@ module.exports = class extends Generator {
           width: '600',
           height: '300',
         },
-        keywords: 'POLITICO, News, Washington D.C.',
-      },
-      telium: {
-        free_paid_content: 'free',
-        site_section: 'white house',
-        ad_unit_section: 'whitehouse',
-        content_author: 'Polly Politico|Peter Politico',
-        content_byline: 'By Polly Politico and Peter Politico',
-        page_name: `${this.title} — POLITICO`,
-      },
+        keywords: 'Maroon, Chicago, UChicago',
+      }
     };
 
     this.fs.writeJSON('meta.json', metaJSON);
