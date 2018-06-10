@@ -16,9 +16,9 @@ const querystring = require('querystring');
 module.exports = () => {
   const target = argv.production ? 
     'projects.chicagomaroon.com' : 
-    'staging-projects.chicagomaroon.com';
+    'stage-projects.chicagomaroon.com';
 
-  const region = 'us-east-1';
+  const region = 'us-east-2';
 
   const publishParams = {
     Bucket: target,

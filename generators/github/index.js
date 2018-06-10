@@ -22,7 +22,7 @@ module.exports = class extends Generator {
     const prompts = [{
       name: 'create',
       type: 'confirm',
-      message: 'Would you like to create a github repository for this project?',
+      message: 'Would you like to create a GitHub repository for this project?',
     }, {
       name: 'repo',
       message: 'Great! What\'s your repo name?',

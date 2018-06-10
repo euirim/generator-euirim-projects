@@ -19,7 +19,7 @@ module.exports = class extends Generator {
     const timestamp = new Date();
     const publishPath = `${timestamp.getFullYear()}/${this.slug}/`;
     const prodUrl = `https://projects.chicagomaroon.com/${publishPath}`;
-    const stagingUrl = `https://s3.amazonaws.com/staging-projects.chicagomaroon.com/${publishPath}index.html`;
+    const stagingUrl = `https://stage-projects.chicagomaroon.com/${publishPath}index.html`;
 
     this.fs.copy(
       this.templatePath('gitignore'),
