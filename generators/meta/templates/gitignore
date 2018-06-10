@@ -7,6 +7,9 @@ archie-token.json
 # Bundles
 dist/**/*.bundle.*
 
+# Dist
+dist/*
+
 # Logs
 logs
 *.log
@@ -68,7 +71,4 @@ typings/
 
 .DS_Store
 
-dist/css/*
-dist/js/*
-dist/index.html
 *.ai
