@@ -17,9 +17,9 @@ module.exports = class extends Generator {
     this.slug = S(this.title).slugify().s;
 
     const timestamp = new Date();
-    const publishPath = `interactives/${timestamp.getFullYear()}/${this.slug}/`;
+    const publishPath = `${timestamp.getFullYear()}/${this.slug}/`;
     const prodUrl = `https://projects.chicagomaroon.com/${publishPath}`;
-    const stagingUrl = `https://s3.amazonaws.com/projects.politico.com/${publishPath}index.html`;
+    const stagingUrl = `https://s3.amazonaws.com/projects.chicagomaroon.com/${publishPath}index.html`;
 
     this.fs.copy(
       this.templatePath('gitignore'),
