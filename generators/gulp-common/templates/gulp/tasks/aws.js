@@ -16,7 +16,7 @@ const querystring = require('querystring');
 module.exports = () => {
   const target = argv.production ? 
     'projects.chicagomaroon.com' : 
-    'projects.chicagomaroon.com';
+    'staging-projects.chicagomaroon.com';
 
   const region = 'us-east-1';
 

@@ -19,7 +19,7 @@ module.exports = class extends Generator {
     const timestamp = new Date();
     const publishPath = `${timestamp.getFullYear()}/${this.slug}/`;
     const prodUrl = `https://projects.chicagomaroon.com/${publishPath}`;
-    const stagingUrl = `https://s3.amazonaws.com/projects.chicagomaroon.com/${publishPath}index.html`;
+    const stagingUrl = `https://s3.amazonaws.com/staging-projects.chicagomaroon.com/${publishPath}index.html`;
 
     this.fs.copy(
       this.templatePath('gitignore'),
@@ -54,7 +54,7 @@ module.exports = class extends Generator {
       stagingUrl,
       url: prodUrl,
       timestamp: '2018-04-10T08:13-0400',
-      dateline: '04/10/18 08:13 PM EDT',
+      dateline: 'September 6, 1996, 08:13 PM EDT',
       "header": {
         "headline": "This is your headline in the metadata file",
         "subhed": "Subhead entices the reader.",
