@@ -67,7 +67,7 @@ module.exports = class extends Generator {
 
     try {
       github.repos.createForOrg({
-        org: 'The-Politico',
+        org: 'chicagomaroon',
         name: this.answers.repo,
         private: true,
       }).then((p) => {
