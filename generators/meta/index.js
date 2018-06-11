@@ -53,8 +53,8 @@ module.exports = class extends Generator {
       publishPath,
       stagingUrl,
       url: prodUrl,
-      timestamp: '2018-04-10T08:13-0400',
-      dateline: 'September 6, 1996, 08:13 PM EDT',
+      timestamp: '1996-09-06T08:13-0400',
+      dateline: 'September 6, 1996',
       "header": {
         "headline": "This is your headline in the metadata file",
         "subhed": "Subhead entices the reader.",
