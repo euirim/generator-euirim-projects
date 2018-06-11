@@ -64,10 +64,6 @@ module.exports = class extends Generator {
 
    // Template context
     this.fs.writeJSON('src/data/data.json', {});
-    this.fs.writeJSON('src/data/archie.json', {
-      headline: 'Test Maroon Headline',
-      subhead: 'This is a sample subhead. Make it yours!',
-    });
 
     // Images directories
     mkdirp('./src/images');
