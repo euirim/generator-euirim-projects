@@ -11,4 +11,13 @@ module.exports = {
     return !strip ? safe(marked(str)) :
       safe(marked(str).trim().replace(/^<p>|<\/p>$/g, ''));
   },
+  imageVersionFilter: (str, size) => {
+    if (str) {
+      var ls = str.split(".");
+      return ls.slice(0, -1) + "-" + String(size) + "." + ls[ls.length - 1];
+    }
+    else {
+      return str;
+    }
+  },
 };
