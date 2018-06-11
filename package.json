@@ -1,5 +1,5 @@
 {
-  "name": "maroon-projects-generator",
+  "name": "generator-maroon-projects",
   "description": "Yeoman generator for The Chicago Maroon's projects.",
   "version": "0.8.0",
   "main": "generators/app/index.js",

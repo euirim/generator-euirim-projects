@@ -1,5 +1,5 @@
 {
-  "name": "maroon-project-<%=slug%>",
+  "name": "<%=slug%>",
   "version": "1.0.0",
   "description": "A Maroon project.",
   "main": "index.js",

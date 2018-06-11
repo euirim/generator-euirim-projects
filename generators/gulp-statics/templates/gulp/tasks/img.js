@@ -11,6 +11,10 @@ module.exports = () => {
       new Promise((resolve) => {
         if (paths.length > 0) images = true;
 
+        // copy over gifs and svgs without compression
+        gulp.src('./src/images/**/*.@(gif|svg)')
+          .pipe(gulp.dest('./dist/images'))
+
         gulp.src('./src/images/**/*.@(jpg|png)')
           .pipe(gulpif(images, responsive({
             '*': [{

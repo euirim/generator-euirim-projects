@@ -1,4 +1,4 @@
-# maroon-projects-generator
+# generator-maroon-projects
 
 A [Yeoman](http://yeoman.io) generator to scaffold a development environment for building interactives/projects for *The Chicago Maroon*. Inspired by POLITICO's interactives generator.
 

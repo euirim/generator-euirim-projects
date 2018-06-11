@@ -25,7 +25,7 @@ module.exports = () => {
   };
 
   if (argv.production) {
-    publishParams['Cloudfront'] = 'E3V6OHE700RHMR';
+    publishParams['Cloudfront'] = 'EHVM03JP7DO9S';
   }
 
   const meta = fs.readJsonSync(

@@ -5,6 +5,7 @@ const nunjucksSettings = require('../../server/nunjucks-settings.js');
 
 const manageEnvironment = (environment) => {
   environment.addFilter('markdown', nunjucksSettings.markdownFilter);
+  environment.addFilter('imageVersion', nunjucksSettings.imageVersionFilter);
 };
 
 module.exports = () => {
@@ -18,5 +19,7 @@ module.exports = () => {
     path: ['src/templates/'],
     data: ctx,
     manageEnv: manageEnvironment,
+  }).on('error', function(e){
+    console.log(e);
   })).pipe(gulp.dest('dist'));
 };
