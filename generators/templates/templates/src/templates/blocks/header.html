@@ -1,0 +1,22 @@
+<header class="center">
+  <!-- social icons -->
+  <ul class="social-icons">
+    <li><a class="facebook-social-icon" href="https://www.facebook.com/sharer/sharer.php?u={{ META.url | urlencode }}"><i class="fab fa-facebook-square"></i></a></li>
+    <li><a class="twitter-social-icon" href="http://twitter.com/intent/tweet?url={{ META.url | urlencode }}&amp;via=chicagomaroon&amp;text={{META.share.twitter.share_tweet | urlencode}}"><i class="fab fa-twitter-square"></i></a></li>
+    <li><a class="linkedin-social-icon" href="http://www.linkedin.com/shareArticle?mini=true&url={{ META.url | urlencode }}"><i class="fab fa-linkedin"></i></a></li>
+  </ul>
+
+  <p class="category">
+    <a href="https://chicagomaroon.com/news" target="_blank">News</a>
+  </p>
+  <h1 class="head">
+    {{ ARCHIE.headline }}
+  </h1>
+  <p class="subhead">
+    {{ ARCHIE.subhead }}
+  </p>
+  <p class="info">
+    By <span class="byline"><a href="{{ META.header.byline_link }}">{{ META.header.byline }}</a></span></span> <br />
+    <span class="timestamp"> <time datetime="{{ META.timestamp }}">{{ META.dateline }}</time></span>
+  </p>
+</header>

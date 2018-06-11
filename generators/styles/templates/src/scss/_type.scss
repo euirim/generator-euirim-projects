@@ -1,0 +1,62 @@
+@import "variables";
+
+body {
+    line-height: 1.618;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+article {
+    p {
+        a {
+            color: inherit;
+            text-decoration: none;
+            /* underline without clashing with descenders */
+            border-bottom: 2px solid #b81c32;
+        }
+
+        a:hover {
+            text-decoration: none;
+        }
+    }
+}
+
+h1,h2,h3,h4,h5,h6 {
+    font-family: $sans-serif; 
+    font-style: normal;
+    font-weight: 700;
+    max-width: $colWidth;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 1.0rem;
+}
+
+p {
+    font-family: $serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1.25em;
+    max-width: $colWidth;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 1.0rem;
+}
+
+figcaption {
+    margin-top: 1em;
+    font-family: $sans-serif;
+    color: grey;
+}
+
+.blockcap {
+    font-family: $sans-serif;
+    font-weight: bold;
+    font-size: 4rem;
+    line-height: 1;
+    text-align: center;
+    float: left;
+    display: block;
+    position: relative;
+    width: 1em;
+    color: $black;
+}

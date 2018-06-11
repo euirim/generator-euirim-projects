@@ -61,63 +61,51 @@ module.exports = class extends Generator {
     this.fs.copy(
       this.templatePath('src/templates/index.html'),
       this.destinationPath('src/templates/index.html'));
+    this.fs.copy(
+      this.templatePath('src/templates/base.html'),
+      this.destinationPath('src/templates/base.html'));
     // Meta
     this.fs.copy(
-      this.templatePath('src/templates/meta/_social.html'),
-      this.destinationPath('src/templates/meta/_social.html'));
+      this.templatePath('src/templates/meta/comments.html'),
+      this.destinationPath('src/templates/meta/comments.html'));
     this.fs.copy(
-      this.templatePath('src/templates/meta/_telium.html'),
-      this.destinationPath('src/templates/meta/_telium.html'));
+      this.templatePath('src/templates/meta/icons.html'),
+      this.destinationPath('src/templates/meta/icons.html'));
     this.fs.copy(
-      this.templatePath('src/templates/meta/_icons.html'),
-      this.destinationPath('src/templates/meta/_icons.html'));
+      this.templatePath('src/templates/meta/social.html'),
+      this.destinationPath('src/templates/meta/social.html'));
+    // Blocks
     this.fs.copy(
-      this.templatePath('src/templates/meta/_comments.html'),
-      this.destinationPath('src/templates/meta/_comments.html'));
-    // Ads
+      this.templatePath('src/templates/blocks/breakpoints.html'),
+      this.destinationPath('src/templates/blocks/breakpoints.html'));
     this.fs.copy(
-      this.templatePath('src/templates/ads/_banner1.html'),
-      this.destinationPath('src/templates/ads/_banner1.html'));
+      this.templatePath('src/templates/blocks/footer.html'),
+      this.destinationPath('src/templates/blocks/footer.html'));
     this.fs.copy(
-      this.templatePath('src/templates/ads/_cube1.html'),
-      this.destinationPath('src/templates/ads/_cube1.html'));
+      this.templatePath('src/templates/blocks/header.html'),
+      this.destinationPath('src/templates/blocks/header.html'));
     this.fs.copy(
-        this.templatePath('src/templates/ads/_cube2.html'),
-        this.destinationPath('src/templates/ads/_cube2.html'));
+      this.templatePath('src/templates/blocks/nav.html'),
+      this.destinationPath('src/templates/blocks/nav.html'));
+    // Sections
     this.fs.copy(
-        this.templatePath('src/templates/ads/_cube-super1.html'),
-        this.destinationPath('src/templates/ads/_cube-super1.html'));
-    this.fs.copy(
-        this.templatePath('src/templates/ads/_cube-super2.html'),
-        this.destinationPath('src/templates/ads/_cube-super2.html'));
-    this.fs.copy(
-        this.templatePath('src/templates/ads/_cube-super3.html'),
-        this.destinationPath('src/templates/ads/_cube-super3.html'));
-    this.fs.copy(
-        this.templatePath('src/templates/ads/_cube-super4.html'),
-        this.destinationPath('src/templates/ads/_cube-super4.html'));
-    this.fs.copy(
-      this.templatePath('src/templates/ads/_script.html'),
-      this.destinationPath('src/templates/ads/_script.html'));
-    this.fs.copy(
-      this.templatePath('src/templates/partials/breakpoints.html'),
-      this.destinationPath('src/templates/partials/breakpoints.html'));
-    this.fs.copy(
-      this.templatePath('src/templates/partials/footer.html'),
-      this.destinationPath('src/templates/partials/footer.html'));
-    this.fs.copy(
-      this.templatePath('src/templates/partials/header.html'),
-      this.destinationPath('src/templates/partials/header.html'));
-    this.fs.copy(
-      this.templatePath('src/templates/partials/nav.html'),
-      this.destinationPath('src/templates/partials/nav.html'));
+      this.templatePath('src/templates/sections/image.html'),
+      this.destinationPath('src/templates/sections/text.html'));
+
     // Template context
     this.fs.writeJSON('src/data/data.json', {});
     // Images directories
     mkdirp('./src/images');
     this.fs.copy(
-      this.templatePath('dist/images/share.jpg'),
-      this.destinationPath('dist/images/share.jpg'));
+      this.templatePath('dist/images/apple-touch-icon.png'),
+      this.destinationPath('dist/images/apple-touch-icon.png'));
+    this.fs.copy(
+      this.templatePath('dist/images/nameplate.svg'),
+      this.destinationPath('dist/images/nameplate.svg'));
+    this.fs.copy(
+      this.templatePath('dist/images/favicon.ico'),
+      this.destinationPath('dist/images/favicon.ico'));
+
     // Javascript
     this.fs.copy(
       this.templatePath('src/js/main-app.js'),

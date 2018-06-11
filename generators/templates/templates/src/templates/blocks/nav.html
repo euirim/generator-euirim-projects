@@ -1,0 +1,17 @@
+<nav title="navigation" class="navbar navbar-expand-sm sticky-top navbar-light bg-light">
+  <a class="navbar-brand" href="https://www.chicagomaroon.com" title="The Chicago Maroon" target="_top">
+    {% if env == 'production' %}
+    <img class="navbar-brand" src="images/nameplate.svg" height=40 />
+    {% else %}
+    <img class="navbar-brand" src="../../images/nameplate.svg" height=40 />
+    {% endif %}
+  </a>
+
+  <ul class="navbar-nav ml-auto">
+    <!--
+    <li class="nav-item hidden-xs"><a class="nav-link nav-social-icon" href="https://www.chicagomaroon.com/pages/donate"><i class="fab fa-facebook-square"></i></a></li>
+    <li class="nav-item hidden-xs"><a class="nav-link nav-social-icon" href="https://www.chicagomaroon.com/pages/donate"><i class="fab fa-twitter-square"></i></a></li>
+    -->
+    <li class="nav-item hidden-xs"><a class="btn btn-outline-danger my-2 my-sm-0" href="https://www.chicagomaroon.com/pages/donate">Donate</a></li>
+  </ul>
+</nav>

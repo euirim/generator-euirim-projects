@@ -1,0 +1,32 @@
+@import "variables";
+
+.navbar {
+    box-shadow: 0px 1px 6px 0px rgba(0,0,0,0.12);
+}
+
+.navbar-light {
+    // border-bottom: $light-grey solid 1px;
+}
+
+.bg-light {
+    background-color: white!important;
+}
+
+.navbar-brand {
+    margin-top: -2px;
+    margin-bottom: -2px;
+    /* Center nameplate in navbar */
+    /*
+    margin-left: auto;
+    margin-right: auto;
+    float: center;
+    */
+}
+
+.nav-social-icon {
+    font-size: 2em;
+    margin-bottom:-5px;
+    padding-top:0;
+    padding-bottom:0;
+    margin-top:-3px;
+}

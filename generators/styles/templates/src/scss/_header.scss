@@ -1,0 +1,47 @@
+@import "variables";
+
+header.center {
+    text-align: center;
+    padding-top: 2em;
+    padding-bottom: 1.5em;
+
+    .category {
+        font-family: $sans-serif;
+        text-transform: uppercase;
+        font-size: 1em;
+        font-weight: 700;
+        margin-bottom: 0;
+
+        a {
+            color: $black;
+        }
+    }
+
+    .info {
+        font-family: $sans-serif;
+        .timestamp {
+            color: #b81c32;
+        }
+    }
+    
+    .head {
+        font-size: 2.6em;
+        margin-bottom: 0.2em;
+    }
+    
+    .subhead {
+        margin-bottom: 0.1em;
+    }
+
+    .info {
+        color: grey;
+        font-size: 1.1em;
+    }
+
+    .byline {
+        font-weight: 700;
+        a {
+            color: grey;
+        }
+    }
+}
