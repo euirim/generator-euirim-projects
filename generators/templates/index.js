@@ -57,45 +57,12 @@ module.exports = class extends Generator {
         archie: this.archie,
         spreadsheet: this.spreadsheet,
       });
-    // Nunjucks templates
+    // Nunjucks templates + js
     this.fs.copy(
-      this.templatePath('src/templates/index.html'),
-      this.destinationPath('src/templates/index.html'));
-    this.fs.copy(
-      this.templatePath('src/templates/base.html'),
-      this.destinationPath('src/templates/base.html'));
-    // Meta
-    this.fs.copy(
-      this.templatePath('src/templates/meta/comments.html'),
-      this.destinationPath('src/templates/meta/comments.html'));
-    this.fs.copy(
-      this.templatePath('src/templates/meta/icons.html'),
-      this.destinationPath('src/templates/meta/icons.html'));
-    this.fs.copy(
-      this.templatePath('src/templates/meta/social.html'),
-      this.destinationPath('src/templates/meta/social.html'));
-    // Blocks
-    this.fs.copy(
-      this.templatePath('src/templates/blocks/breakpoints.html'),
-      this.destinationPath('src/templates/blocks/breakpoints.html'));
-    this.fs.copy(
-      this.templatePath('src/templates/blocks/footer.html'),
-      this.destinationPath('src/templates/blocks/footer.html'));
-    this.fs.copy(
-      this.templatePath('src/templates/blocks/header.html'),
-      this.destinationPath('src/templates/blocks/header.html'));
-    this.fs.copy(
-      this.templatePath('src/templates/blocks/nav.html'),
-      this.destinationPath('src/templates/blocks/nav.html'));
-    // Sections
-    this.fs.copy(
-      this.templatePath('src/templates/sections/image.html'),
-      this.destinationPath('src/templates/sections/image.html'));
-    this.fs.copy(
-      this.templatePath('src/templates/sections/text.html'),
-      this.destinationPath('src/templates/sections/text.html'));
+      this.templatePath('src'),
+      this.destinationPath('src'));
 
-    // Template context
+   // Template context
     this.fs.writeJSON('src/data/data.json', {});
     // Images directories
     mkdirp('./src/images');
@@ -108,11 +75,6 @@ module.exports = class extends Generator {
     this.fs.copy(
       this.templatePath('dist/images/favicon.ico'),
       this.destinationPath('dist/images/favicon.ico'));
-
-    // Javascript
-    this.fs.copy(
-      this.templatePath('src/js/main-app.js'),
-      this.destinationPath('src/js/main-app.js'));
   }
 
   installing() {
