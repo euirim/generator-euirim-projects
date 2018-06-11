@@ -4,7 +4,10 @@ header.center {
     text-align: center;
     padding-top: 2em;
     padding-bottom: 1.5em;
+    // to make thin and centered
     max-width: 480px;
+    margin-left: auto;
+    margin-right: auto;
 
     .category {
         font-family: $sans-serif;
