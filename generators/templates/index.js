@@ -90,6 +90,9 @@ module.exports = class extends Generator {
     // Sections
     this.fs.copy(
       this.templatePath('src/templates/sections/image.html'),
+      this.destinationPath('src/templates/sections/image.html'));
+    this.fs.copy(
+      this.templatePath('src/templates/sections/text.html'),
       this.destinationPath('src/templates/sections/text.html'));
 
     // Template context
