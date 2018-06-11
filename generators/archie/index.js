@@ -24,12 +24,16 @@ module.exports = class extends Generator {
     this.fs.writeJSON('src/data/archie.json', {
       headline: 'Test Maroon Headline',
       subhead: 'This is a sample subhead. Make it yours!',
+      sections: [{
+        type: 'text',
+        text: 'Hello, world! This is your content.',
+      }],
     });
   }
 
   install() {
     const dependencies = [
-      'archieml-pipe',
+      'archieml-pipe'
     ];
 
     this.yarnInstall(dependencies, { save: true });
