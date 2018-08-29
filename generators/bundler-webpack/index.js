@@ -53,8 +53,8 @@ module.exports = class extends Generator {
   install() {
     const dependencies = [
       'autoprefixer',
-      'babel-core',
-      'babel-loader',
+      'babel-core@6.26.3',
+      'babel-loader@7.1.5',
       'babel-preset-airbnb',
       'babel-preset-env',
       'babel-preset-react',
