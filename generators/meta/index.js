@@ -17,7 +17,7 @@ module.exports = class extends Generator {
     this.slug = S(this.title).slugify().s;
 
     const timestamp = new Date();
-    const publishPath = `${timestamp.getFullYear()}/${this.slug}/`;
+    const publishPath = `article/${timestamp.getFullYear()}/${this.slug}/`;
     const prodUrl = `http://projects.chicagomaroon.com/${publishPath}`;
     const stagingUrl = `http://stage-projects.chicagomaroon.com/${publishPath}`;
 
