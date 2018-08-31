@@ -1,4 +1,4 @@
-<figure>
+<figure class="{{ section.size }}">
     {% if env == 'production' %}
     <img
         src="images/{{ section.filename | imageVersion(1800) }}"
@@ -9,5 +9,9 @@
     {% else %}
     <img src="../../images/{{ section.filename }}" class="img-fluid" />
     {% endif %}
-    <figcaption class="figcaption">{{ section.caption }} | <figcredit>By {{ section.credit }}</figcredit></figcaption>
+    <figcaption class="figcaption">{{ section.caption }}{% if section.caption %}&nbsp;{% endif %}
+        <figcredit>
+            <span class="name">{{ section.credit }}</span>
+        </figcredit>
+    </figcaption>
 </figure>

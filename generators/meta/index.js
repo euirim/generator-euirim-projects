@@ -55,17 +55,18 @@ module.exports = class extends Generator {
       url: prodUrl,
       timestamp: '1996-09-06T08:13-0400',
       dateline: 'September 6, 1996',
-      "header": {
-        "headline": "This is your headline in the metadata file",
-        "subhed": "Subhead entices the reader.",
-        "byline": "Carl Maroon",
-        "byline_link": "https://www.chicagomaroon.com/"
+      header: {
+        headline: 'This is your headline in the metadata file',
+        subhead: 'Subhead entices the reader.',
+        bylines: [{
+          name: 'Carl Maroon',
+          link: 'https://www.chicagomaroon.com',
+        }],
       },
       share: {
         fbook: {
           card_title: this.title,
           card_description: 'The independent student newspaper of The University of Chicago since 1892.',
-          author: 'chicagomaroon',
         },
         twitter: {
           card_title: this.title,
@@ -81,7 +82,7 @@ module.exports = class extends Generator {
           height: '300',
         },
         keywords: 'Maroon, Chicago, UChicago',
-      }
+      },
     };
 
     this.fs.writeJSON('meta.json', metaJSON);

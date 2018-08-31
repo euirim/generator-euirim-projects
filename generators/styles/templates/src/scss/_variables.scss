@@ -2,8 +2,13 @@ $serif: "Chronicle Text G2 A", "Chronicle Text G2 B";
 $sans-serif: "Verlag A", "Verlag B";
 $colWidth: 580px;
 // the width of items that extend beyond the base column of text
-$extendedColWidth: 780px;
+$mediumColWidth: $colWidth;
+$largeColWidth: 780px;
+$xlargeColWidth: 1200px;
 
 /* Colors */
 $black: #333;
+$dark-grey:rgb(89, 89, 89);
+$grey: rgb(136, 136, 136);
 $light-grey: #e0e0e0;
+$red: #b81c32;

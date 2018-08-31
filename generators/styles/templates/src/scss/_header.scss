@@ -1,18 +1,42 @@
 @import "variables";
+$sidePadding: 0.8rem;
 
 header.center {
-    text-align: center;
-    padding-top: 2em;
-    padding-bottom: 1.5em;
-    // to make thin and centered
-    max-width: 480px;
-    margin-left: auto;
-    margin-right: auto;
+    @media screen and (max-width: 576px) {
+        padding-top: 0.9rem;
+    }
+
+    padding-top: 2.5vmin;
+
+    .info {
+        text-align: center;
+    }
+
+    figcaption {
+        @media screen and (max-width: 576px) {
+            padding-left: 15px;
+        }
+    }
+
+    hr {
+        background-color: $grey;
+        width: 198px;
+    }
+
+    .timestamp {
+        color: #b81c32;
+        font-family: $sans-serif;
+        font-size: 0.9rem;
+
+        @media screen and (max-width: 576px) {
+            margin-bottom: 0.6rem;
+        }
+    }
 
     .category {
         font-family: $sans-serif;
         text-transform: uppercase;
-        font-size: 1em;
+        font-size: 1rem;
         font-weight: 700;
         margin-bottom: 0;
 
@@ -21,31 +45,40 @@ header.center {
         }
     }
 
-    .info {
-        font-family: $sans-serif;
-        .timestamp {
-            color: #b81c32;
-        }
-    }
-    
     .head {
-        font-size: 2.6em;
-        margin-bottom: 0.2em;
-    }
-    
-    .subhead {
-        margin-bottom: 0.1em;
+        @media screen and (max-width: 576px) {
+            font-size: 1.8rem;
+        }
+
+        padding-left: $sidePadding;
+        padding-right: $sidePadding;
+        font-size: 2.1rem;
+        font-style: italic;
+        max-width: $colWidth;
+        margin-left: auto;
+        margin-right: auto;
+
     }
 
-    .info {
-        color: grey;
-        font-size: 1.1em;
+    .subhead {
+        padding-left: $sidePadding;
+        padding-right: $sidePadding;
+        margin-bottom: 0.1rem;
     }
 
     .byline {
-        font-weight: 700;
-        a {
-            color: grey;
+        padding-left: $sidePadding;
+        padding-right: $sidePadding;
+        margin-top: 1.5vmin;
+        font-family: $sans-serif;
+
+        .byline-name {
+            font-weight: 700;
+            text-transform: uppercase;
+
+            a {
+                color: $black;
+            }
         }
     }
 }

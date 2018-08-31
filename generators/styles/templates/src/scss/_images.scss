@@ -1,9 +1,17 @@
 @import "variables";
 
 figure {
-    margin-top: 1.5em;
-    margin-bottom: 1.5em;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
     margin-left: auto;
     margin-right: auto;
-    max-width: $extendedColWidth;    
+    max-width: $mediumColWidth;    
+
+    &.large {
+        max-width: $largeColWidth;
+    }
+
+    &.xlarge {
+        max-width: $xlargeColWidth;
+    }
 }

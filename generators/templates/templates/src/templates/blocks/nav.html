@@ -1,9 +1,9 @@
 <nav title="navigation" class="navbar navbar-expand-sm sticky-top navbar-light bg-light">
   <a class="navbar-brand" href="https://www.chicagomaroon.com" title="The Chicago Maroon" target="_top">
     {% if env == 'production' %}
-    <img class="navbar-brand" src="images/nameplate.svg" height=40 />
+    <img src="images/nameplate.svg" height=32 />
     {% else %}
-    <img class="navbar-brand" src="../../images/nameplate.svg" height=40 />
+    <img src="../../images/nameplate.svg" height=32 />
     {% endif %}
   </a>
 
@@ -12,6 +12,23 @@
     <li class="nav-item hidden-xs"><a class="nav-link nav-social-icon" href="https://www.chicagomaroon.com/pages/donate"><i class="fab fa-facebook-square"></i></a></li>
     <li class="nav-item hidden-xs"><a class="nav-link nav-social-icon" href="https://www.chicagomaroon.com/pages/donate"><i class="fab fa-twitter-square"></i></a></li>
     -->
-    <li class="nav-item hidden-xs"><a class="btn btn-outline-danger my-2 my-sm-0" href="https://www.chicagomaroon.com/pages/donate">Donate</a></li>
+    <li class="nav-item d-block d-sm-none">
+      <button class="btn btn-outline-dark" data-toggle="modal" data-target="#shareModal"><i class="fas fa-share-square"></i></button>
+    </li>
+     <li class="nav-item d-none d-sm-block">
+      <a class="btn" href="https://www.facebook.com/sharer/sharer.php?u={{ META.url | urlencode }}">
+        <i class="fab fa-facebook-f"></i>
+      </a>
+    </li>
+    <li class="nav-item d-none d-sm-block">
+      <a class="btn" href="https://twitter.com/intent/tweet?url={{ META.url | urlencode }}&amp;via=chicagomaroon&amp;text={{META.share.twitter.share_tweet | urlencode}}">
+        <i class="fab fa-twitter"></i>
+      </a>
+    </li>
+    <li class="nav-item d-none d-sm-block">
+      <a class="btn" href="https://www.linkedin.com/shareArticle?mini=true&url={{ META.url | urlencode }}">
+        <i class="fab fa-linkedin-in"></i>
+      </a>
+    </li>
   </ul>
 </nav>
