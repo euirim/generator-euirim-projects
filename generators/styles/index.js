@@ -27,6 +27,12 @@ module.exports = class extends Generator {
       this.templatePath('src/scss/_comments.scss'),
       this.destinationPath('src/scss/_comments.scss'));
     this.fs.copy(
+      this.templatePath('src/scss/_interstitials.scss'),
+      this.destinationPath('src/scss/_interstitials.scss'));
+    this.fs.copy(
+      this.templatePath('src/scss/_forms.scss'),
+      this.destinationPath('src/scss/_forms.scss'));
+    this.fs.copy(
       this.templatePath('src/scss/_bootstrap.scss'),
       this.destinationPath('src/scss/_bootstrap.scss'));
     this.fs.copy(
@@ -35,8 +41,10 @@ module.exports = class extends Generator {
   }
   install() {
     const dependencies = [
-      'bootstrap'
+      'bootstrap',
     ];
-    this.yarnInstall(dependencies, { save: true });
+    this.yarnInstall(dependencies, {
+      save: true,
+    });
   }
 };
