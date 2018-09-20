@@ -14,13 +14,11 @@
   {% include "blocks/nav.html" %}
   {% include "blocks/header.html" %}
 
-  <article class="container">
+  <article class="container-fluid">
     {% for section in ARCHIE.sections %}
       {% include "sections/" + section.type + ".html" %}
     {% endfor %}
 
-    <!-- Comments -->
-    {% include "meta/comments.html" %}
   </article>
 
   {% include "blocks/share_modal.html" %}

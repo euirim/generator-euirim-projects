@@ -33,8 +33,14 @@ module.exports = class extends Generator {
       this.templatePath('src/scss/_forms.scss'),
       this.destinationPath('src/scss/_forms.scss'));
     this.fs.copy(
-      this.templatePath('src/scss/_bootstrap.scss'),
-      this.destinationPath('src/scss/_bootstrap.scss'));
+      this.templatePath('src/scss/_forms.scss'),
+      this.destinationPath('src/scss/_forms.scss'));
+    this.fs.copy(
+      this.templatePath('src/scss/_events.scss'),
+      this.destinationPath('src/scss/_events.scss'));
+    this.fs.copy(
+      this.templatePath('src/scss/_layout.scss'),
+      this.destinationPath('src/scss/_layout.scss'));
     this.fs.copy(
       this.templatePath('src/scss/main.scss'),
       this.destinationPath('src/scss/main.scss'));

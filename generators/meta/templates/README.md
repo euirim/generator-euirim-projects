@@ -2,8 +2,8 @@
 
 | Title | <%= title %> |
 |-|-|
-| Developer    | [<%= userName %>](<%= userEmail %>) |
+| Developer    | [<%= userName %>](mailto:<%= userEmail %>) |
 | Link | [<%= url %>](<%= url %>) |
 
 
-©<%= year %> The Chicago Maroon
+©<%= year %> *The Chicago Maroon*

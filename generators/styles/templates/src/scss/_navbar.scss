@@ -3,34 +3,34 @@
 .navbar {
     border-bottom: 1px solid $grey;
 
-    height:60px;
+    height: $navbarHeight;
 
-    .btn {
-        font-size:0.8rem;
-        padding:0.25rem 0.5rem;
-    }
-    
-    a {
-        color: $black;
-        :hover {
-            color: $red;
+    .nav-item {
+        .btn {
+            font-size: 0.8rem;
+            font-weight: bold;
+            padding: 0.25rem 0.5rem;
+
+        }
+
+        a:hover {
+            background-color: $red;
+            color: white;
+            border-color: $red;
         }
     }
 }
 
-.navbar-light {
-    // border-bottom: $light-grey solid 1px;
-}
-
 .bg-light {
-    background-color: white!important;
+    background-color: white !important;
 }
 
 .navbar-brand {
     margin-top: -8px;
     margin-bottom: 0;
+
     @media screen and (max-width: 576px) {
-        margin-top:-2px;
+        margin-top: -2px;
     }
 
     /* Center nameplate in navbar */
@@ -43,8 +43,8 @@
 
 .nav-social-icon {
     font-size: 2em;
-    margin-bottom:-5px;
-    padding-top:0;
-    padding-bottom:0;
-    margin-top:-3px;
+    margin-bottom: -5px;
+    padding-top: 0;
+    padding-bottom: 0;
+    margin-top: -3px;
 }

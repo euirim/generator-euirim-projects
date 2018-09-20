@@ -30,11 +30,6 @@ article {
         }
     }
 
-    .section-header {
-        margin-top: 2rem;
-        font-size: 1.6rem;
-    }
-
     h1,
     h2,
     h3,
@@ -45,6 +40,12 @@ article {
         margin-left: auto;
         margin-right: auto;
     }
+
+    .section-header {
+        margin-top: 2rem;
+        font-size: 1.6rem;
+    }
+
 }
 
 h1,
@@ -93,6 +94,10 @@ article {
 .btn {
     text-transform: uppercase;
     border-radius: 0px;
+
+    * {
+        font-weight: bold;
+    }
 }
 
 .blockcap {
