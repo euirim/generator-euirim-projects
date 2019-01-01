@@ -7,11 +7,13 @@ $largeColWidth: 780px;
 $xlargeColWidth: 1200px;
 
 /* Colors */
-$black: #333;
-$dark-grey:rgb(89, 89, 89);
-$grey: rgb(136, 136, 136);
-$light-grey: #e0e0e0;
-$red: #b81c32;
+$brightness-0: rgb(42, 44, 48);
+$brightness-20: rgb(86, 89, 94);
+$brightness-40: rgb(136, 139, 144);
+$brightness-60: rgb(189, 193, 198);
+$brightness-80: rgb(217, 221, 226);
+$brightness-100: rgb(255, 255, 255);
+$primary: #b03060;
 
 /* Navbar */
 $navbarHeight: 60px;

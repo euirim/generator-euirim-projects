@@ -19,7 +19,7 @@ header.center {
     }
 
     hr {
-        background-color: $grey;
+        background-color: $brightness-40;
         width: 198px;
     }
 
@@ -41,7 +41,7 @@ header.center {
         margin-bottom: 0;
 
         a {
-            color: $black;
+            color: $brightness-0;
         }
     }
 
@@ -77,7 +77,7 @@ header.center {
             text-transform: uppercase;
 
             a {
-                color: $black;
+                color: $brightness-0;
             }
         }
     }

@@ -21,12 +21,12 @@ article {
             color: inherit;
             text-decoration: none;
             /* underline without clashing with descenders */
-            border-bottom: 2px solid $red;
+            border-bottom: 2px solid $primary;
         }
 
         a:hover {
             text-decoration: none;
-            color: $red;
+            color: $primary;
         }
     }
 
@@ -71,12 +71,12 @@ p {
 figcaption {
     margin-top: 1rem;
     font-family: $sans-serif;
-    color: $dark-grey;
+    color: $brightness-20;
     font-size: 0.9rem;
 }
 
 figcredit {
-    color: $grey;
+    color: $brightness-40;
     font-size: 0.7rem;
 
     .name {
@@ -86,7 +86,7 @@ figcredit {
 
 article {
     hr {
-        background-color: $grey;
+        background-color: $brightness-40;
         width: $mediumColWidth;
     }
 }
@@ -110,11 +110,11 @@ article {
     display: block;
     position: relative;
     width: 1rem;
-    color: $black;
+    color: $brightness-0;
 }
 
 .share-list {
     a {
-        color: $black;
+        color: $brightness-0;
     }
 }
