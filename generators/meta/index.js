@@ -45,6 +45,7 @@ module.exports = class extends Generator {
         userName: this.user.git.name(),
         userEmail: this.user.git.email(),
         url: prodUrl,
+        urlStaging: stagingUrl,
         year: timestamp.getFullYear(),
       });
 
