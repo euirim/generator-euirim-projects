@@ -2,4 +2,32 @@
 
 A [Yeoman](https://yeoman.io) generator to scaffold a development environment for building interactives/projects for *The Chicago Maroon*. Inspired by POLITICO's interactives generator.
 
-See the docs on [readthedocs](https://generator-politico-interactives.readthedocs.io/en/latest/).
+## Installation
+Enter: 
+```
+yarn link
+```
+
+## Usage
+1. Create a fresh directory for your new project and move into it in your terminal.
+```
+$ mkdir my-project
+$ cd my-project
+```
+
+2. Run the generator and answer the questions it asks to build your development environment.
+```
+$ yo maroon-projects
+```
+
+3. Run gulp to start the development server.
+```
+$ gulp
+```
+
+
+See the docs on [readthedocs](https://generator-politico-interactives.readthedocs.io/en/latest/) for more info.
+
+---
+
+Adapted by [Euirim Choi](https://euirim.org) '19.
