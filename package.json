@@ -23,13 +23,13 @@
     "url": "https://github.com/chicagomaroon/maroon-projects-generator.git"
   },
   "dependencies": {
+    "@octokit/rest": "^15.11.2",
     "chalk": "^1.1.3",
     "fs-extra": "^3.0.1",
-    "github": "^9.2.0",
     "mkdirp": "^0.5.1",
     "secure-keys": "^1.0.0",
     "simple-git": "^1.73.0",
-    "string": "^3.3.3",
+    "slugify": "^1.3.1",
     "yeoman-generator": "^1.1.1"
   },
   "devDependencies": {

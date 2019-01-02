@@ -1,5 +1,5 @@
 const Generator = require('yeoman-generator');
-const S = require('string');
+const S = require('slugify');
 
 module.exports = class extends Generator {
   constructor(args, opts) {
@@ -14,7 +14,7 @@ module.exports = class extends Generator {
 
   writing() {
     this.title = this.options.title;
-    this.slug = S(this.title).slugify().s;
+    this.slug = S(this.title);
 
     const timestamp = new Date();
     const publishPath = `article/${timestamp.getFullYear()}/${this.slug}/`;

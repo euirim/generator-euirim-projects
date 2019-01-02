@@ -97,7 +97,7 @@ module.exports = class extends Generator {
       'node-env-file@0.1.8',
       'node-sass@4.9.3',
       'nodemon@1.18.4',
-      'nunjucks@3.1.3',
+      'nunjucks@3.1.6',
       'open@0.0.5',
       'optimize-css-assets-webpack-plugin@3.2.0',
       'portfinder@1.0.17',
