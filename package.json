@@ -1,6 +1,6 @@
 {
-  "name": "generator-maroon-projects",
-  "description": "Yeoman generator for The Chicago Maroon's projects.",
+  "name": "generator-euirim-projects",
+  "description": "Yeoman generator for Euirim's projects.",
   "version": "0.8.0",
   "main": "generators/app/index.js",
   "scripts": {
@@ -14,13 +14,13 @@
   ],
   "author": {
     "name": "Euirim Choi",
-    "email": "euirim@chicagomaroon.com",
-    "url": "https://github.com/chicagomaroon"
+    "email": "euirim@gmail.com",
+    "url": "https://euirim.org"
   },
   "license": "ISC",
   "repository": {
     "type": "git",
-    "url": "https://github.com/chicagomaroon/maroon-projects-generator.git"
+    "url": "https://github.com/euirim/generator-euirim-projects.git"
   },
   "dependencies": {
     "@octokit/rest": "^15.11.2",
