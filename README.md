@@ -1,6 +1,6 @@
 # generator-maroon-projects
 
-A [Yeoman](https://yeoman.io) generator to scaffold a development environment for building interactives/projects for *The Chicago Maroon*. Inspired by POLITICO's interactives generator.
+A [Yeoman](https://yeoman.io) generator to scaffold a development environment for building Euirim's personal project pages. Adapted from POLITICO's interactives generator.
 
 ## Installation
 Enter: 
@@ -17,7 +17,7 @@ $ cd my-project
 
 2. Run the generator and answer the questions it asks to build your development environment.
 ```
-$ yo maroon-projects
+$ yo euirim-projects
 ```
 
 3. Run gulp to start the development server.
