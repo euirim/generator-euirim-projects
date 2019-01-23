@@ -18,8 +18,8 @@ module.exports = class extends Generator {
 
     const timestamp = new Date();
     const publishPath = `article/${timestamp.getFullYear()}/${this.slug}/`;
-    const prodUrl = `https://projects.chicagomaroon.com/${publishPath}`;
-    const stagingUrl = `http://stage-projects.chicagomaroon.com/${publishPath}`;
+    const prodUrl = `https://euirim.org/${publishPath}`;
+    const stagingUrl = `http://euirim.org/${publishPath}`;
 
     this.fs.copy(
       this.templatePath('gitignore'),
@@ -60,20 +60,21 @@ module.exports = class extends Generator {
         headline: 'This is your headline in the metadata file',
         subhead: 'Subhead entices the reader.',
         bylines: [{
-          name: 'Carl Maroon',
-          link: 'https://www.chicagomaroon.com',
+          name: 'Euirim Choi',
+          link: 'https://www.euirim.org',
         }],
       },
       share: {
         fbook: {
           card_title: this.title,
-          card_description: 'The independent student newspaper of The University of Chicago since 1892.',
+          card_description: 'Euirim is an engineer, journalist, and aspiring scientist interested in cybersecurity, online abuse, artificial intelligence, market power.',
+          author: 'euirim',
         },
         twitter: {
           card_title: this.title,
-          share_tweet: 'The independent student newspaper of The University of Chicago since 1892.',
-          card_description: 'The independent student newspaper of The University of Chicago since 1892.',
-          author: '@chicagomaroon',
+          share_tweet: 'Euirim is an engineer, journalist, and aspiring scientist interested in cybersecurity, online abuse, artificial intelligence, market power.',
+          card_description: 'Euirim is an engineer, journalist, and aspiring scientist interested in cybersecurity, online abuse, artificial intelligence, market power.',
+          author: '@euirim',
         },
         image: {
           url: `${prodUrl}images/share.jpg`,
@@ -82,11 +83,10 @@ module.exports = class extends Generator {
           width: '600',
           height: '300',
         },
-        keywords: 'Maroon, Chicago, UChicago',
+        keywords: 'Euirim, Choi, UChicago',
       },
     };
 
     this.fs.writeJSON('meta.json', metaJSON);
   }
-
 };

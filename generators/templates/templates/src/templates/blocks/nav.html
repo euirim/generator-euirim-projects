@@ -1,5 +1,5 @@
 <nav title="navigation" class="navbar navbar-expand-sm sticky-top navbar-light bg-light">
-  <a class="navbar-brand" href="https://www.chicagomaroon.com" title="The Chicago Maroon" target="_top">
+  <a class="navbar-brand" href="https://www.euirim.org" title="Euirim Choi" target="_top">
     {% if env == 'production' %}
     <img src="images/nameplate.svg" height=32 />
     {% else %}
@@ -8,10 +8,6 @@
   </a>
 
   <ul class="navbar-nav ml-auto">
-    <!--
-    <li class="nav-item hidden-xs"><a class="nav-link nav-social-icon" href="https://www.chicagomaroon.com/pages/donate"><i class="fab fa-facebook-square"></i></a></li>
-    <li class="nav-item hidden-xs"><a class="nav-link nav-social-icon" href="https://www.chicagomaroon.com/pages/donate"><i class="fab fa-twitter-square"></i></a></li>
-    -->
     <li class="nav-item d-block d-sm-none">
       <button class="btn btn-outline-dark" data-toggle="modal" data-target="#shareModal"><i class="fas fa-share-square"></i></button>
     </li>
@@ -21,7 +17,7 @@
       </a>
     </li>
     <li class="nav-item d-none d-sm-block">
-      <a class="btn" href="https://twitter.com/intent/tweet?url={{ META.url | urlencode }}&amp;via=chicagomaroon&amp;text={{META.share.twitter.share_tweet | urlencode}}">
+      <a class="btn" href="https://twitter.com/intent/tweet?url={{ META.url | urlencode }}&amp;via=euirim&amp;text={{META.share.twitter.share_tweet | urlencode}}">
         <i class="fab fa-twitter"></i>
       </a>
     </li>

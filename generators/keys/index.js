@@ -19,7 +19,7 @@ module.exports = class extends Generator {
 
   validateKeys() {
     this.secure = new SecureKeys({ secret: this.options.passphrase });
-    this.keyPath = path.join(os.homedir(), '.maroon/interactives.json');
+    this.keyPath = path.join(os.homedir(), '.euirim/interactives.json');
 
     try {
       const keysObj = fs.readJsonSync(this.keyPath);
@@ -76,7 +76,7 @@ module.exports = class extends Generator {
   writing() {
     if (this.validKeys || !this.answers.write) return;
 
-    mkdirp(path.join(os.homedir(), '.maroon/'));
+    mkdirp(path.join(os.homedir(), '.euirim/'));
 
     fs.writeJsonSync(this.keyPath, this.secure.encrypt({
       awsAccessKey: this.answers.awsAccessKey,
@@ -93,6 +93,6 @@ module.exports = class extends Generator {
     if (this.validKeys || !this.answers.write) return;
     this.log(
       'New keys encrypted and saved to',
-      chalk.yellow('~/.maroon/interactives.json.'));
+      chalk.yellow('~/.euirim/interactives.json.'));
   }
 };

@@ -38,7 +38,7 @@ function startServer(port) {
   });
 
   middleware.waitUntilValid(() => {
-    console.log(`app started on port ${port}`);
+    console.log(`App started on port ${port}`);
     open(`http://localhost:${port}`);
   });
 }

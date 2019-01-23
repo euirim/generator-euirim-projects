@@ -1,4 +1,4 @@
-# generator-maroon-projects
+# generator-euirim-projects
 
 A [Yeoman](https://yeoman.io) generator to scaffold a development environment for building Euirim's personal project pages. Adapted from POLITICO's interactives generator.
 

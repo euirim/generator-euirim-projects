@@ -22,15 +22,15 @@ module.exports = class extends Generator {
       this.destinationPath('gulp/tasks/archie.js'));
 
     this.fs.writeJSON('src/data/archie.json', {
-      headline: 'Test Maroon Headline',
+      headline: 'Test Headline',
       subhead: 'This is a sample subhead. Make it yours!',
       sections: [{
           type: 'text',
-          text: 'Fraternity parties have no place at the University of Chicago. They are horrific, nauseating, and claustrophobic, rife with social anxieties and sweaty bodies weirdly undulating to suggestive music. They are a poor excuse for genuine camaraderie. Instead, through cheap liquor and obnoxiously loud music, they render their guests invincibly stupid and permanently deaf. I avoid them all at costs, particularly because of the music—which I can safely assume would be a sample of the latest noisome albums. But why am I right? For that, we must turn to a philosopher named Hannah Arendt.',
+          text: 'After the demise of the Second Triumvirate, Augustus restored the outward façade of the free Republic, with governmental power vested in the Roman Senate, the executive magistrates, and the legislative assemblies. In reality, however, he retained his autocratic power over the Republic as a military dictator. By law, Augustus held a collection of powers granted to him for life by the Senate, including supreme military command, and those of tribune and censor.',
         },
         {
           type: 'text',
-          text: 'Few political theorists of the 20th century were as ingenious, intuitive, and still sorely underappreciated as Hannah Arendt. Her almost three-decade-long enterprise in American academia (including teaching at the University of Chicago) produced a body of literature that masterfully schematized authoritarian regimes, critiqued the liberal nation-state, and offered a new model of politics that emulated the Athenian polis and its veneration of deliberative democracy and a robust public sphere.',
+          text: 'The reign of Augustus initiated an era of relative peace known as the Pax Romana. The Roman world was largely free from large-scale conflict for more than two centuries, despite continuous wars of imperial expansion on the Empire\'s frontiers and the year-long civil war known as the "Year of the Four Emperors" over the imperial succession. Augustus dramatically enlarged the Empire, annexing Egypt, Dalmatia, Pannonia, Noricum, and Raetia, expanding possessions in Africa, and completing the conquest of Hispania, but suffered a major setback in Germania. Beyond the frontiers, he secured the Empire with a buffer region of client states and made peace with the Parthian Empire through diplomacy.',
         }
       ],
     });

@@ -1,14 +1,14 @@
 {
   "name": "<%=slug%>",
   "version": "1.0.0",
-  "description": "A Maroon project.",
+  "description": "A Euirim project.",
   "main": "index.js",
   "scripts": {
     "test": "echo \"No tests\" && exit 1"
   },
   "author": {
-    "name": "<%=userName%>",
-    "email": "<%=userEmail%>"
+    "name": "Euirim Choi",
+    "email": "euirim@gmail.com"
   },
   "license": "ISC"
 }

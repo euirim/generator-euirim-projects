@@ -2,7 +2,7 @@
 
 | Title | <%= title %> |
 |-|-|
-| Developer    | [<%= userName %>](mailto:<%= userEmail %>) |
+| Developer    | [Euirim Choi](euirim@gmail.com) |
 | Link | [<%= url %>](<%= url %>) |
 
 ## Usage
@@ -39,4 +39,4 @@ See the docs on [readthedocs](https://generator-politico-interactives.readthedoc
 
 ---
 
-©<%= year %> *The Chicago Maroon*
+©<%= year %> Euirim Choi
